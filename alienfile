@@ -1,0 +1,10 @@
+use alienfile;
+
+plugin PkgConfig => pkg_name => 'libcmark', minimum_version => '0.21.0';
+
+share {
+  start_url 'https://github.com/commonmark/cmark/archive/0.28.3.tar.gz';
+  plugin Download => version => qr/^([0-9.]+)\.tar\.gz$/;
+  plugin Extract => format => 'tar.gz';
+  plugin 'Build::CMake';
+};

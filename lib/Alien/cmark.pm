@@ -5,15 +5,19 @@ use warnings;
 
 our $VERSION = '0.001';
 
+use parent 'Alien::Base';
+
 1;
 
 =head1 NAME
 
-Alien::cmark - Module abstract
-
-=head1 SYNOPSIS
+Alien::cmark - Alien wrapper for cmark
 
 =head1 DESCRIPTION
+
+This module provides the C<cmark> reference implementation of
+L<CommonMark|http://commonmark.org/>, consisting of the C<libcmark> library and
+C<cmark> command-line tool. See L<Alien::Build::Manual::AlienUser> for usage.
 
 =head1 BUGS
 
@@ -33,3 +37,4 @@ This is free software, licensed under:
 
 =head1 SEE ALSO
 
+L<CommonMark>

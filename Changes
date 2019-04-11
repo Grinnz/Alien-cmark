@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Trim unnecessary dynamic requirements for share install
 
 0.001     2019-04-01 13:32:26 EDT
   - First release

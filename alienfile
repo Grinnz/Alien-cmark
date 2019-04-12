@@ -10,4 +10,5 @@ share {
   plugin 'Download';
   plugin Extract => format => 'tar.gz';
   plugin 'Build::CMake';
+  plugin 'Gather::IsolateDynamic';
 };

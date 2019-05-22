@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+0.005     2019-05-22 10:28:11 EDT
   - Require a newer version of Alien::Build::MM for a clean_install bugfix.
   - Reminder: You may need to reinstall XS modules build against Alien::cmark if you had version 0.002 or older installed previously.
 

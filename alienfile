@@ -6,8 +6,8 @@ plugin 'Probe::CommandLine' => command => 'cmark', args => ['--version'], match 
 meta->prop->{out_of_source} = 1;
 
 share {
-  start_url 'https://github.com/commonmark/cmark/archive/0.28.3.tar.gz';
-  plugin 'Download';
+  start_url 'src/cmark-0.31.1.tar.gz';
+  plugin 'Fetch::Local';
   plugin Extract => format => 'tar.gz';
   plugin 'Build::CMake';
   plugin 'Gather::IsolateDynamic';

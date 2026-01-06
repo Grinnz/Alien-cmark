@@ -35,6 +35,8 @@ This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
+Bundled C<cmark> library includes its own F<COPYING> information.
+
 =head1 SEE ALSO
 
 L<CommonMark>

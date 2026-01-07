@@ -10,5 +10,11 @@ share {
   plugin 'Fetch::Local';
   plugin Extract => format => 'tar.gz';
   plugin 'Build::CMake';
+  build [
+    [ '%{cmake}', @{meta->prop->{plugin_build_cmake}->{args}},
+      '-DCMARK_STATIC=ON', '-DCMARK_SHARED=ON', '%{.install.extract}' ],
+    '%{make}',
+    '%{make} install',
+  ];
   plugin 'Gather::IsolateDynamic';
 };

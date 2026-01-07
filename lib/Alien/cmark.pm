@@ -35,7 +35,9 @@ This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
-Bundled C<cmark> library includes its own F<COPYING> information.
+Bundled L<cmark|https://github.com/commonmark/cmark> library for
+share installs is licensed under the MIT and (two-clause) BSD license.
+See its F<COPYING> file for details.
 
 =head1 SEE ALSO
 

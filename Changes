@@ -1,6 +1,6 @@
 {{$NEXT}}
+  - Update share install to libcmark 0.31.1. System libcmark 0.21.0+ will still be used if available.
   - Bundle libcmark for share install instead of downloading it from the internet.
-  - Update share install to cmark 0.31.1. System libcmark 0.21.0+ will still be used if available.
 
 0.005     2019-05-22 10:28:11 EDT
   - Require a newer version of Alien::Build::MM for a clean_install bugfix.
